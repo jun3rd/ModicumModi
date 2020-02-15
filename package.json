@@ -1,0 +1,23 @@
+{
+  "name": "modicummodi",
+  "version": "1.0.0",
+  "description": "Modicum -  a small quantity of a particular thing, especially something considered desirable or valuable.  Modi - plural of modus (the immediate manner in which property may be acquired {as by occupation or prescription} or the particular tenure by which it is held).",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jun3rd/ModicumModi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jun3rd/ModicumModi/issues"
+  },
+  "homepage": "https://github.com/jun3rd/ModicumModi#readme"
+}
