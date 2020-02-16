@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modicum Modi</title>
+    <link rel="stylesheet" href="/css/default.css" />
+<head>
+</head>
+<body>
+    <h1>FizzBuzz</h1>
+    <hr />
+
+    <h2>FizzBuzz (3 versions)</h2>
+    <dl>
+        <dt>Browser version</dt><dd>Run within the browser, but included RequireJS to allow unit testing with "chai".</dd>
+        <dt>Server version</dt><dd>Run within the server, and all answers sent back to browser in a completed format.</dd>
+        <dt>Comm version</dt>
+        <dd>
+            <ol>
+                <li>browser continuously sends requests for each calculation. waiting for each answer. (browser sends: calc-request-1, calc-request-2, ... etc.)</li>
+                <li>server receives request and processes the data, then sends back: number, fizz, buzz, or fizzbuzz. (server might respond in different order: calc-request-2-answer, calc-request-1-answer, ... etc)</li>
+                <li>browser receives answer and send acknowledgement back to server</li>
+                <li>some answers from server might be consist of both number-and-letter which will signal the browser to wait an estimated amount of time.</li>
+                <li>browser re-organizes the answers, and sends new request for any of the missing pieces of data, or any requests that have exceeded the estimated response time the server gave.</li>
+                <li>server processes new requests only if there is no same request being processed or in queue.</li>
+            </ol>
+        </dd>
+    </dl>
+
+    <h2>FizzBuzz Browser</h2>
+
+    <h2>FizzBuzz Server</h2>
+
+    <h2>FizzBuzz Comm</h2>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
+
